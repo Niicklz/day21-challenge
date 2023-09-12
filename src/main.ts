@@ -45,5 +45,6 @@ cuadros.forEach((cuadro) => {
       target.appendChild(dragElement);
       target.classList.remove("hover");
     }
+    imagen.style.left = "0";
   });
 });
