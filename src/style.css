@@ -12,6 +12,7 @@ body {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  pointer-events: none;
 }
 .cuadro {
   width: 150px;
@@ -19,6 +20,7 @@ body {
   border: 3px solid black;
   background-color: #fff;
   position: relative;
+  pointer-events: all;
 }
 .hover {
   border: 3px dashed #fff;
@@ -29,9 +31,13 @@ body {
 
 
 .imagen  {
-  position: absolute;
+  
   background-image: url(https://source.unsplash.com/random/150x150);
   width: 100%;
   height: 100%;
   cursor: grab;
+}
+
+.hidden {
+ width: 0px;
 }
